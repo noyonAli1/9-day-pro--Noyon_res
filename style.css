@@ -1,5 +1,115 @@
 /* google font */
 .work-sans {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* shared style */
+.text-gray {
+    color: #424242;
+}
+
+/* dark 03 */
+.text-light-gray {
+    color: #727272;
+}
+
+.main-containe-width {
+    width: 70%;
+    /* max-width: 1400px; */
+    margin: 0 auto;
+}
+
+.main-back-color {
+    background-color: lab(84.34% 6.64 19.59);
+}
+.nav-menu-icon{
+    display: none;
+}
+
+.navber {
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+ul>li>a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* banner section kaj korbo akhon */
+
+.btn-color-pri {
+    background-color: #FF900E;
+    color: aliceblue;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+}
+
+.banner-content {
+    max-width: 861px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 4rem;
+
+    background: linear-gradient(to left, rgb(201, 41, 140), rgb(61, 160, 213));
+    background-clip: text;
+    color: transparent;
+}
+.banner-diskison{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn-primary {
+    margin-bottom: 50px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.banner-img{
+    width: 100%;
+}
+
+/* responsive media query */
+
+@media screen and  (max-width:576px){
+    .nav-menu-icon{
+        display: block;
+        font-size: 20px;
+        color: rgb(2, 38, 70);
+    }
+    .nav-menu{
+        display: none;
+    }
+    .navber .main-containe-width{
+        width: 100%;
+    }
+}
+
+/* ...... */
